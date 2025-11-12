@@ -1,0 +1,31 @@
+:root{ --bg:#0b0f17; --panel:#121826; --muted:#9aa4b2; --text:#e6edf3; --brand:#6aa0ff; --brand-600:#3b82f6; --danger:#ef4444; }
+*{ box-sizing:border-box }
+html,body{ height:100% }
+body{ margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; background:var(--bg); color:var(--text) }
+.container{ max-width:720px; margin:48px auto; padding:0 16px }
+
+h1{ font-size:28px; margin:0 0 16px }
+.panel{ background:var(--panel); border:1px solid rgba(255,255,255,.06); border-radius:12px; padding:16px }
+.row{ display:flex; gap:12px }
+.avatar{ width:40px; height:40px; border-radius:999px; background:linear-gradient(135deg, #6aa0ff, #a78bfa); display:flex; align-items:center; justify-content:center; font-weight:700 }
+.avatar span{ font-size:14px }
+
+.textarea{ width:100%; background:transparent; color:var(--text); border:1px solid rgba(255,255,255,.12); border-radius:10px; padding:12px 14px; resize:vertical; min-height:96px }
+.textarea:focus{ outline:none; border-color:var(--brand) }
+
+.actions{ display:flex; justify-content:space-between; align-items:center; margin-top:10px }
+.counter{ color:var(--muted); font-size:12px }
+.counter.over{ color:var(--danger) }
+.button{ background:var(--brand-600); color:white; border:none; border-radius:10px; padding:10px 14px; font-weight:600; cursor:pointer }
+.button[disabled]{ opacity:.5; cursor:not-allowed }
+
+.list{ margin-top:18px; display:flex; flex-direction:column; gap:12px }
+.item{ background:transparent; border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:12px }
+.meta{ display:flex; align-items:center; gap:8px; color:var(--muted); font-size:12px }
+.name{ color:var(--text); font-weight:600 }
+.content{ margin-top:8px; white-space:pre-wrap; line-height:1.5 }
+.itemActions{ display:flex; gap:8px; margin-top:10px }
+.iconBtn{ padding:6px 10px; border-radius:8px; border:1px solid rgba(255,255,255,.08); background:rgba(255,255,255,.02); color:var(--muted); cursor:pointer }
+.iconBtn.active{ color:var(--brand) }
+
+.footerNote{ margin-top:18px; color:var(--muted); font-size:12px; text-align:right }
